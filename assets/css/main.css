@@ -195,7 +195,16 @@ h6 {
     margin-top:2rem;
   }
 
+  .major span{
+    color:red;
+    margin-left:4rem;
+  }
 
+  @media screen and (min-width:374px) {
+    .major span{
+      display: none;
+    }
+  }
 @media screen and (max-width: 1680px) {
   h1 {
     font-size: 3.5em; } }

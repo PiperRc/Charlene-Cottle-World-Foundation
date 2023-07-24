@@ -260,3 +260,12 @@
 			});
 
 })(jQuery);
+
+
+// on smaller screens
+let x=document.querySelector('.major span');
+let sidebar=document.querySelector('#sidebar');
+
+x.addEventListener('click',()=>{
+	sidebar.classList.add('inactive')
+})
