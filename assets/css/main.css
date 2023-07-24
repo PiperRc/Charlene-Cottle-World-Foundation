@@ -195,15 +195,19 @@ h6 {
     margin-top:2rem;
   }
 
+  /* X */
   .major span{
-    color:red;
-    margin-left:4rem;
+    color: red;
+    margin-left: 20rem;
+    font-size: 2.5rem;
   }
 
-  @media screen and (min-width:374px) {
+ 
+  @media screen and (min-width:400px) {
     .major span{
       display: none;
     }
+  
   }
 @media screen and (max-width: 1680px) {
   h1 {
