@@ -162,7 +162,10 @@ h1 {
   margin: 0 0 0.5em 0;
   line-height: 1.3; 
 }
-
+header h1{
+  font-family: 'Oleo Script', cursive;
+  letter-spacing: 5px;
+}
 
 .about-heading,
 .news-heading,
@@ -201,6 +204,25 @@ h6 {
     margin-left: 20rem;
     font-size: 2.5rem;
   }
+
+  /* back to top */
+  a.top {
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    width: 5rem;
+    color: white;
+    float: right;
+    opacity: .2;
+    transition: .5s;
+   
+}
+
+a.top:hover{
+  opacity: 1;
+  
+}
 
  
   @media screen and (min-width:400px) {
