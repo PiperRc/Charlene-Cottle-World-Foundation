@@ -262,10 +262,36 @@
 })(jQuery);
 
 
-// on smaller screens
+// X on smaller screens
 let x=document.querySelector('.major span');
 let sidebar=document.querySelector('#sidebar');
 
 x.addEventListener('click',()=>{
 	sidebar.classList.add('inactive')
 })
+
+
+// scroll on reveal
+const revealAll=document.querySelectorAll('.reveal');
+
+
+function revealOnScroll() {
+
+	for( const element of revealAll){
+   
+        const revealPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (revealPosition < windowHeight * 0.75) { // Adjust the threshold as needed
+            element.style.opacity = '1';
+          
+        }
+	}
+    
+}
+
+// Attach the revealOnScroll function to the window's scroll event
+window.addEventListener('scroll', revealOnScroll);
+
+// Initial reveal on page load (in case elements are already in view)
+revealOnScroll();

@@ -224,13 +224,21 @@ a.top:hover{
   
 }
 
- 
+
+/* scroll on reveal */
+.reveal{
+  opacity: 0;
+  transition: opacity .7s;
+}
+
+/* get rid of X on larger screens */
   @media screen and (min-width:400px) {
     .major span{
       display: none;
     }
   
   }
+ 
 @media screen and (max-width: 1680px) {
   h1 {
     font-size: 3.5em; } }
