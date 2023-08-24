@@ -231,6 +231,18 @@ a.top:hover{
   transition: opacity .7s;
 }
 
+/* support-icon */
+.support-icon{
+  padding-right: 2rem;
+}
+
+/* enlarge on load */
+/* .enlarge{
+  transform: scale(0);
+  transition: 5s ease-in;
+} */
+
+
 /* get rid of X on larger screens */
   @media screen and (min-width:400px) {
     .major span{

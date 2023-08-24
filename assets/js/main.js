@@ -295,3 +295,25 @@ window.addEventListener('scroll', revealOnScroll);
 
 // Initial reveal on page load (in case elements are already in view)
 revealOnScroll();
+
+
+
+
+// enlarge on load
+// const enlarge=document.querySelector('.enlarge');
+
+
+
+// function enlargeOnScroll() {
+
+// 	enlarge.style.transform='scale(1)'
+
+	
+    
+// }
+
+// Attach the revealOnScroll function to the window's scroll event
+// window.addEventListener('load', enlargeOnScroll);
+
+// // Initial reveal on page load (in case elements are already in view)
+// enlargeOnScroll();
