@@ -298,22 +298,23 @@ revealOnScroll();
 
 
 
+// 
+const animateElements = document.querySelectorAll('.scaleUp');
 
-// enlarge on load
-// const enlarge=document.querySelector('.enlarge');
+function animateOnScroll() {
+  animateElements.forEach(element => {
+    const elementTop = element.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
 
+    if (elementTop < screenHeight) {
+      element.style.transform = 'scale(1)';
+      element.style.opacity = '1';
+    }
+  });
+}
 
+// Trigger the animation immediately for visible elements when the page loads
+animateOnScroll();
 
-// function enlargeOnScroll() {
-
-// 	enlarge.style.transform='scale(1)'
-
-	
-    
-// }
-
-// Attach the revealOnScroll function to the window's scroll event
-// window.addEventListener('load', enlargeOnScroll);
-
-// // Initial reveal on page load (in case elements are already in view)
-// enlargeOnScroll();
+// Attach the scroll event listener to continue animating elements as they come into view
+window.addEventListener('scroll', animateOnScroll);

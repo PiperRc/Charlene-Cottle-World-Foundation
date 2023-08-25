@@ -236,11 +236,20 @@ a.top:hover{
   padding-right: 2rem;
 }
 
-/* enlarge on load */
-/* .enlarge{
-  transform: scale(0);
-  transition: 5s ease-in;
-} */
+.scaleUp{
+  /* width: 100px; 
+  height: 100px;  */
+  
+  opacity: 0; /* Make the element invisible initially */
+  transform: scale(0); /* Set initial scale to 0 */
+  transition: transform 2s, opacity 2s;
+}
+
+.scaleUp.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
 
 
 /* get rid of X on larger screens */
